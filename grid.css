@@ -1,0 +1,64 @@
+/*
+File Name: grid.css
+Date: 08/06/17
+Programmer: Stesha Norstrom
+*/
+
+/* Adapted from: http://www.responsivegridsystem.com (media queries changed to mobile first) */
+
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 8% 1.6%;
+}
+
+
+
+/*  GROUPING  */
+.group:before, .group:after { 
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+/*MOBILE STYLES*/
+
+.col {
+    margin: 0;
+}
+
+.span_3_of_3 { 
+    width: 100%; 
+}
+
+/* TABLET and DESKTOP STYLES */
+
+@media only screen and (min-width: 600px) {
+
+.col {
+    margin: 0 1.6%;
+}
+
+.span_2_of_3 { 
+    width: 60%; 
+}
+
+.span_1_of_3 { 
+    width: 33.3%; 
+}
+
+.col:nth-child(3) { 
+    margin-left: 1%; 
+}
+}

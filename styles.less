@@ -1,0 +1,474 @@
+/*
+File Name: styles.less
+Date: 12/1/17
+Programmer: Stesha Norstrom
+*/
+
+@import "colorsFonts.less";
+
+//Mobile Syles
+
+body{
+    background-color: @light_color;
+    font-family: @serif; 
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background: rgb(255, 0, 0);
+}
+
+header h1 {
+    font-family: @sans_serif;
+    font-size: @font_size_standard;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 5px;
+}
+
+header h3 {
+    text-align: center;
+    font-size: @font_size_small;
+    font-family: @sans_serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.rslides {
+    display: none;
+}
+
+#aboutEvent {
+    width: auto;
+    margin: 0 2%;
+}
+
+#aboutEvent h1 {
+    font-family: @sans_serif;
+    padding: 10px;
+}
+
+#aboutEvent p {
+    font-family: @serif;
+    font-size: @font_size_smaller;
+}
+
+section h1 {
+    font-size: @font_size_standard;
+    font-family: @sans_serif;
+    text-align: center;
+}
+
+#contactForm form {
+    width: auto;
+    margin: 0 2%;
+}
+
+#contactForm form label {
+    font-size: @font_size_smaller;
+    font-family: @serif;
+}
+
+#contactForm input[type=text] {
+    width: 300px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: @font_size_smaller;
+}
+
+#contactForm input[type=email] {
+    width: 300px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: @font_size_smaller;
+}
+
+#contactForm textarea {
+    font-size: @font_size_smaller;
+    font-family: @sans_serif;
+    width: 300px;
+}
+
+#contactForm .button {
+    padding: 10px 25px;
+    border-radius: 12px;
+}
+
+#contactForm h1 {
+    font-family: @sans_serif;
+    font-size: @font_size_standard;
+    text-align: center;
+    padding: 20px;
+}
+
+#weatherFeed {
+    padding: 20px;
+    margin: 20px 2%;
+}
+
+#socialMediaFeed {
+    width: auto;
+    margin: 20px 2%;
+}
+
+aside h1 {
+    font-family: @sans_serif;
+    font-size: @font_size_small;
+    text-align: center;
+}
+
+#socialMediaFeed h2 {
+    text-align: center;
+    font-size: @font_size_standard;
+    font-family: @sans_serif;
+    padding: 10px;
+}
+
+iframe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+footer {
+    height: 90px;
+    background-color: #858585;
+}
+
+footer h1 {
+    font-family: @sans_serif;
+    font-size: @font_size_standard;
+    text-align: center;
+}
+
+/*Events page specific styles*/
+
+#courseDetails {
+    width: auto;
+    margin: 0 2%;
+}
+
+#courseDetails h1 {
+    font-family: @sans_serif;
+    padding: 10px;
+    font-size: @font_size_standard;
+}
+
+#courseDetails h2 {
+    font-family: @sans_serif;
+    font-size: @font_size_small;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+#courseDetails p {
+    font-size: @font_size_smaller;
+    padding: 5px;
+    line-height: 1.5em;
+    font-family: @serif;
+}
+
+#startingTimes {
+    width: auto;
+    margin: 20px 2%;
+}
+
+#startingTimes h1 {
+    font-family: @sans_serif;
+    padding: 10px;
+    font-size: @font_size_standard;
+}
+
+#startingTimes h2 {
+    font-family: @sans_serif;
+    font-size: @font_size_small;
+    padding: 10px 0 5px 0;
+    text-align: center;
+}
+
+.eventTimes ul {
+    list-style: none;
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-size: @font_size_smaller;
+    
+}
+
+aside h2, p {
+    font-family: @sans_serif;
+    font-size: @font_size_small;
+    padding: 10px;
+    text-align: center;
+}
+
+/*Registration page specific styles*/
+
+#registrationForm {
+    width: auto;
+    margin: 0 2%;
+    padding: 10px 0 20px 0;
+}
+
+#registrationForm h1 {
+    font-family: @sans_serif;
+    padding: 10px;
+    font-size: @font_size_standard;
+}
+
+#registrationForm form label {
+    font-size: @font_size_smaller;
+    font-family: @serif;
+    padding: 5px 10px 10px 5px;
+}
+
+#registrationForm input[type=text], input[type=email], input[type=tel] {
+    width: 300px;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: @font_size_smaller;
+}
+
+#registrationForm select {
+    padding: 10px;
+    width: 125px;
+}
+
+#registrationForm input[type=submit] {
+    padding: 10px 25px;
+    border-radius: 12px;
+    width: 125px;
+}
+
+#registrationCosts {
+    width: auto;
+    margin: 0 2%;
+    border-top: 1px solid black;
+}
+
+#registrationCosts ul {
+    list-style: none;
+    line-height: 1.5em;
+    font-family: @serif;
+    font-size: @font_size_smaller;
+}
+
+#costIncludes {
+    width: auto;
+    margin: 0 2%;
+}
+
+#costIncludes h2 {
+    font-family: @sans_serif;
+    font-size: @font_size_small;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+
+#costIncludesList ul {
+    display: list-item;
+    line-height: 1.5em;
+    font-family: @serif;
+    font-size: @font_size_smaller; 
+    margin-left: 20px;
+}
+
+.linkBack {
+    font-family: @sans_serif;
+    font-size: @font_size_smaller;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/*FAQS page specific styles*/
+
+#eventParticipation, #frequentlyAskedQuestions {
+    width: auto;
+    margin: 0 2%;
+    padding: 10px 0 20px 0;
+}
+
+#eventParticipation h1 {
+    font-family: @sans_serif;
+    padding: 10px;
+    font-size: @font_size_standard;
+}
+
+#eventParticipation p {
+    line-height: 1.5em;
+    font-family: @serif;
+    font-size: @font_size_smaller;
+}
+
+#frequentlyAskedQuestions h1 {
+    font-family: @sans_serif;
+    padding: 10px;
+    font-size: @font_size_standard;
+    text-align: center;
+}
+
+#frequentlyAskedQuestions h2 {
+    font-family: @sans_serif;
+    padding: 10px;
+    font-size: @font_size_small;
+    text-align: center;
+}
+
+#frequentlyAskedQuestions p {
+    font-family: @serif;
+    padding: 5px;
+    font-size: @font_size_smaller;
+    line-height: 1.5em;
+}
+
+.linkBack h2 {
+    font-size: @font_size_smaller;
+}
+
+ #contactPageReturn, #registrationPageReturn {
+        height: 535px;
+    }
+
+/*Tablet Styles*/
+
+@media only screen and (min-width: 600px) {
+    
+    #mobileImage {
+        width: auto;
+    }
+    
+    #contactForm {
+        padding: 10px;
+    }  
+
+    #eventParticipation p, #frequentlyAskedQuestions p {
+    text-align: left;
+    padding: 5px;
+    }
+    
+    #contactPageReturn, #registrationPageReturn {
+        height: 550px;
+    }
+}
+
+/*Desktop Styles*/
+
+@media only screen and (min-width: 1024px) {
+    
+    header h1 {
+        font-size: @font_size_large;
+    }
+    
+    #mobileImage {
+        display: none;
+    }
+    
+    /*slideshow styling*/
+    .rslides {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 80%;
+        padding: 0;
+        margin: auto;
+    }
+
+    .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+    }
+
+    .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+        }
+    
+    /*End slideshow styling*/
+    
+    /*Form styling*/
+    
+    #contactForm, #registrationForm form {
+        margin: auto;
+        position: relative;
+        font-family: @sans_serif;
+        font-size: @font_size_smaller;
+        line-height: 20px;
+        text-decoration: none;
+        padding: 20px;
+    }
+    
+    #contactForm h1 {
+        padding: 30px;
+    }
+    
+    /* Floating column for labels: 25% width */
+   .col-25 {
+        float: left;
+        width: 25%;
+        margin-top: 6px;
+   }
+
+   /* Floating column for inputs: 75% width */
+   .col-75 {
+        float: left;
+        width: 75%;
+        margin-top: 6px;
+   }
+    
+    .row {
+        padding: 0 20px;
+    }
+
+    #participationStatusAthlete, #participationStatusVolunteer {
+        padding: 5px;
+    }
+    
+    /*End of form styling*/
+    
+    #aboutEvent p {
+        text-align: left;
+    }
+
+    #courseDetails, #eventParticipation, #frequentlyAskedQuestions h2 {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+    
+    #courseDetails p {
+        text-align: left;
+    }
+    
+    #regBodyWrap {
+        padding-bottom: 100px;
+    }
+    
+    /*Contact page return styling*/
+    
+    #contactPageReturn, #registrationPageReturn {
+        height: 650px;
+    }
+}
+    
+    
+
+
+
+

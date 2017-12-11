@@ -1,0 +1,66 @@
+nav {
+    width: 100%;
+    background: rgb(255, 0, 0);
+}
+
+#navBar ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: none;
+}
+
+#navBar ul li {
+    list-style: none;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+#navBar ul li:hover {
+    background: #FFF0F3;
+}
+
+#navBar ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Hind Vadodara', sans-serif;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 30px;
+    display: block;
+}
+
+#navBar .active {
+    display: block;   
+}
+
+/*Tablet Styles*/
+
+@media (min-width:600px) {
+    
+    #navBar ul {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    
+    #navBar ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 20px;
+        border: none;
+    }
+    
+    .toggle {
+        display: none;
+    }
+}
